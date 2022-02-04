@@ -23,3 +23,8 @@ df.plot.hexbin
 df.plot.kde
 
 df.plot.pie
+
+
+# c value is shown by size
+
+df1.plot.scatter(x='A',y='B',s=df1['C']*200)
