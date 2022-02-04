@@ -25,6 +25,14 @@ df.plot.kde
 df.plot.pie
 
 
-# c value is shown by size
+# c value is shown by size.
 
 df1.plot.scatter(x='A',y='B',s=df1['C']*200)
+
+# Create an area plot of all the columns for just the rows up to 30.
+
+df3.iloc[0:30].plot.area(alpha=0.4)
+
+plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
+
+
